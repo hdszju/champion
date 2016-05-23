@@ -27,8 +27,8 @@ from smach import State, StateMachine, Concurrence, Container, UserData
 from smach_ros import MonitorState, ServiceState, SimpleActionState, IntrospectionServer
 from std_msgs.msg import Float32
 from geometry_msgs.msg import Twist
-from rbx2_msgs.srv import *
-from rbx2_tasks.task_setup import *
+from cp_msgs.srv import *
+from cp_tasks.task_setup import *
         
 class Stop(State):
     def __init__(self):

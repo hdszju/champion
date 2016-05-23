@@ -25,10 +25,10 @@ import rospy
 from std_msgs.msg import Float32
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
-from rbx2_msgs.srv import *
+from cp_msgs.srv import *
 from pi_trees_ros.pi_trees_ros import *
-from rbx2_tasks.task_setup import *
-from rbx2_tasks.clean_house_tasks_tree import *
+from cp_tasks.task_setup import *
+from cp_tasks.clean_house_tasks_tree import *
 from collections import OrderedDict
 from math import pi, sqrt
 import time

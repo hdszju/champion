@@ -26,7 +26,7 @@ import rospy
 from smach import State, StateMachine, UserData
 from smach_ros import SimpleActionState, IntrospectionServer
 from geometry_msgs.msg import Twist
-from rbx2_tasks.task_setup import *
+from cp_tasks.task_setup import *
 from random import Random
 import os
 

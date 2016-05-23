@@ -26,7 +26,7 @@ import smach
 from smach import State, StateMachine
 from smach_ros import SimpleActionState, IntrospectionServer
 from geometry_msgs.msg import Twist
-from rbx2_tasks.task_setup import *
+from cp_tasks.task_setup import *
 import easygui
 import datetime
 from collections import OrderedDict

@@ -24,7 +24,7 @@
 import rospy
 from smach import State, StateMachine
 from smach_ros import MonitorState, ServiceState, IntrospectionServer
-from rbx2_msgs.srv import *
+from cp_msgs.srv import *
 from std_msgs.msg import Float32
 
 class main():

@@ -6,7 +6,7 @@
 
   <maintainer email="hdszju@163.com">Patrick Goebel</maintainer>
   <license>BSD</license>
-  <url type="website">http://ros.org/wiki/rbx2_tasks</url>
+  <url type="website">http://ros.org/wiki/cp_tasks</url>
   <author >Dashun Han</author>
 
   <!-- Dependencies which this package needs to build itself. -->
@@ -23,7 +23,7 @@
   <build_depend>move_base_msgs</build_depend>
   <build_depend>actionlib</build_depend>
   <build_depend>visualization_msgs</build_depend>
-  <build_depend>rbx2_msgs</build_depend>
+  <build_depend>cp_msgs</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>pi_trees_lib</build_depend>
   <build_depend>pi_trees_ros</build_depend>
@@ -39,7 +39,7 @@
   <run_depend>move_base_msgs</run_depend>
   <run_depend>actionlib</run_depend>
   <run_depend>visualization_msgs</run_depend>
-  <run_depend>rbx2_msgs</run_depend>
+  <run_depend>cp_msgs</run_depend>
   <run_depend>std_msgs</run_depend>
   <run_depend>pi_trees_lib</run_depend>
   <run_depend>pi_trees_ros</run_depend>

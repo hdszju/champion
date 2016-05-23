@@ -1,0 +1,39 @@
+<package>
+  <name>cp_nav</name>
+  <version>0.1.0</version>
+
+  <description>Champion Patrol - Navigation</description>
+
+  <maintainer email="hdszju@163.com">Dashun Han</maintainer>
+  <license>BSD</license>
+  <url type="website">http://champion-robot.com</url>
+  <author email="hdszju@163.com">Patrick Goebel</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>orocos_kdl</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>move_base_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>orocos_kdl</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+
+</package>

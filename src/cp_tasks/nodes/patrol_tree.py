@@ -25,9 +25,9 @@
 import rospy
 from std_msgs.msg import Float32
 from geometry_msgs.msg import Twist
-from rbx2_msgs.srv import *
+from cp_msgs.srv import *
 from pi_trees_ros.pi_trees_ros import *
-from rbx2_tasks.task_setup import *
+from cp_tasks.task_setup import *
 
 class Patrol():
     def __init__(self):

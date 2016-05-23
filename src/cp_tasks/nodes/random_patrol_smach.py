@@ -26,7 +26,7 @@ from smach import State, StateMachine
 from smach_ros import SimpleActionState, IntrospectionServer
 from actionlib import GoalStatus
 from geometry_msgs.msg import Twist
-from rbx2_tasks.task_setup import *
+from cp_tasks.task_setup import *
 from random import randrange
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal, MoveBaseActionFeedback
 
