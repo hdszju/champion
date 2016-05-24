@@ -1,0 +1,7 @@
+<launch>
+    <param name="use_sim_time" value="true"/>
+    <node pkg="cp_vel" type="cp_vel_node" name="vel" output="screen">
+
+      <param name="as" value="0.005"/>
+    </node>
+</launch>
