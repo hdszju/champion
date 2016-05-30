@@ -1,0 +1,4 @@
+const boost::function<
+boost::shared_ptr<typename ParameterAdapter<P>::Message>(void)
+                    >&
+                    factory_fn = DefaultMessageCreator<typename ParameterAdapter<P>::Message>()
