@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(cp_vel)
+project(cp_demo)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED roscpp tf)
+find_package(catkin REQUIRED)
 
 ## System dependencies are found with CMake's conventions
- find_package(Boost REQUIRED system)
+# find_package(Boost REQUIRED COMPONENTS system)
 
-include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -82,11 +81,7 @@ include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 ##     and list every .cfg file to be processed
 
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
-# generate_dynamic_reconfigure_options(# install(TARGETS cp_demo cp_demo_node
-#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+# generate_dynamic_reconfigure_options(
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
@@ -102,7 +97,7 @@ include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES cp_vel
+#  LIBRARIES cp_demo
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
@@ -116,28 +111,24 @@ catkin_package(
 # include_directories(include)
 
 ## Declare a C++ library
-# add_library(cp_vel
-#   src/${PROJECT_NAME}/cp_vel.cpp
+# add_library(cp_demo
+#   src/${PROJECT_NAME}/cp_demo.cpp
 # )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-# add_dependencies(cp_vel ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(cp_demo ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
- add_executable(cp_vel_node src/cp_vel_node.cpp)
- target_link_libraries(cp_vel_node ${Boost_LIBRARIES} ${catkin_LIBRARIES})
- if(catkin_EXPORTED_TARGETS)
-   add_dependencies(cp_vel_node ${catkin_EXPORTED_TARGETS})
- endif()
+# add_executable(cp_demo_node src/cp_demo_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(cp_vel_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(cp_demo_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(cp_vel_node
+# target_link_libraries(cp_demo_node
 #   ${catkin_LIBRARIES}
 # )
 
@@ -156,7 +147,7 @@ catkin_package(
 # )
 
 ## Mark executables and/or libraries for installation
- install(TARGETS cp_vel_node
+ install(TARGETS cp_demo cp_demo_node
    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -181,7 +172,7 @@ catkin_package(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_cp_vel.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_cp_demo.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

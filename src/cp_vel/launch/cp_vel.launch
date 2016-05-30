@@ -1,6 +1,18 @@
 <launch>
-    <param name="use_sim_time" value="true"/>
+    <!-- <param name="use_sim_time" value="true"/> -->
+
+
+    <!-- <include file="$(find cp_tasks)/launch/fake_turtlebot.launch" /> -->
+
     <node pkg="cp_vel" type="cp_vel_node" name="vel" output="screen">
       <param name="as" value="0.005"/>
     </node>
+
+
+    <!-- <node pkg="cp_tasks" type="patrol_script.py" name="cp_tasks"  output="screen">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d `rospack find cp_tasks`/nav_tasks.rviz" >
+    </node> -->
+
 </launch>
