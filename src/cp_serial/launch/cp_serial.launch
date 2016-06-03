@@ -1,0 +1,13 @@
+<launch>
+    <!-- <param name="use_sim_time" value="true"/> -->
+
+
+
+    <node pkg="cp_serial" type="cp_serial_node" name="serial" output="screen">
+      <param name="as" value="0.005"/>
+    </node>
+
+
+
+
+</launch>

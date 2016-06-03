@@ -1,8 +1,0 @@
-<launch>
-
-    <include file="$(find cp_tasks)/launch/fake_turtlebot.launch" />
-
-    <node pkg="rviz" type="rviz" name="rviz" args="-d `rospack find cp_tasks`/nav_tasks.rviz" output="screen">
-    </node>
-
-</launch>
