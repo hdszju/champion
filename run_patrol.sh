@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ./devel/setup.bash
 
 gnome-terminal -x bash -c " roslaunch cp_tasks fake_turtlebot.launch"
 sleep 5s

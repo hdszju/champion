@@ -1,0 +1,37 @@
+<package>
+  <name>cp</name>
+  <version>0.1.0</version>
+
+  <description>ROS By Example Volume 2</description>
+
+  <maintainer email="hdszju@163.com">Dashun Han</maintainer>
+  <license>BSD</license>
+  <url type="website">http://champion-robot.com</url>
+  <author email="hdszju@163.com">han dashun</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>cp_ar_tags</run_depend>
+  <run_depend>cp_dynamixels</run_depend>
+  <run_depend>cp_description</run_depend>
+  <run_depend>cp_tasks</run_depend>
+  <run_depend>cp_vision</run_depend>
+  <run_depend>cp_bringup</run_depend>
+  <run_depend>cp_arm_nav</run_depend>
+  <run_depend>cp_apps</run_depend>
+  <run_depend>cp_learning</run_depend>
+  <run_depend>cp_msgs</run_depend>
+  <run_depend>cp_utils</run_depend>
+  <run_depend>cp_gui</run_depend>
+  <run_depend>cp_nav</run_depend>
+  <run_depend>cp_gazebo</run_depend>
+  <run_depend>cp_diagnostics</run_depend>
+  <run_depend>cp_speech</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+
+</package>
