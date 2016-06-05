@@ -40,3 +40,7 @@ graphviz-dev libgraphviz-dev gv python-scipy liburdfdom-tools \
 ros-indigo-laptop-battery-monitor ros-indigo-ar-track-alvar* \
 ros-indigo-map-server ros-indigo-move-base* \
 ros-indigo-simple-grasping
+
+#add path
+pwd = 'pwd'
+echo $pwd
