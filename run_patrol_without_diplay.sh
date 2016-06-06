@@ -2,6 +2,8 @@
 
 source ./devel/setup.bash
 
+roslaunch rosbridge_server rosbridge_websocket.launch &
+
 roslaunch cp_tasks fake_turtlebot.launch &
 sleep 5s
 #rosrun rviz rviz -d `rospack find cp_tasks`/nav_tasks.rviz"
