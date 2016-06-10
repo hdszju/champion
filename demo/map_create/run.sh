@@ -3,12 +3,12 @@ gnome-terminal -x bash -c " roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 15s
 
 gnome-terminal -x bash -c " rosparam set use_sim_time true;\
-                            rosparam set delta 0.1;\
-                            rosparam set xmin -15.0;\
-                            rosparam set xmax 15.0;\
-                            rosparam set ymin -15.0;\
-                            rosparam set ymax 15.0;\
-                            rosrun gmapping slam_gmapping scan:=base_scan _odom_frame:=odom_combined"
+                            rosrun gmapping slam_gmapping \
+                            xmin=-15.0  \
+                            xmax=15.0 \
+                            ymin=-15.0 \
+                            ymax=15.0 \
+                            scan:=base_scan _odom_frame:=odom_combined"
 sleep 5s
 
 
