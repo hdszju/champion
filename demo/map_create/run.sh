@@ -1,4 +1,6 @@
 #!/bin/bash
+rm -rf mylaserdata.bag
+
 gnome-terminal -x bash -c " roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 15s
 
