@@ -4,6 +4,7 @@ sleep 15s
 
 gnome-terminal -x bash -c " rosparam set use_sim_time true;\
                             rosrun gmapping slam_gmapping \
+                            _delta:=0.05  \
                             _xmin:=-15.0  \
                             _xmax:=15.0 \
                             _ymin:=-15.0 \
