@@ -1,3 +1,4 @@
+#!/binsh
 gnome-terminal -x bash -c " roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 10s
 

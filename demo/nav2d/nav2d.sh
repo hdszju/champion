@@ -1,3 +1,4 @@
+#!/binsh
 sudo apt-get install ros-indigo-rosbridge-suite
 
 sudo apt-get install apache2
