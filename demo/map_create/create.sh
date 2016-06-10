@@ -1,4 +1,4 @@
-#!/binsh
+#!/bin/bash
 
 
 gnome-terminal -x bash -c " rosbag play --clock mylaserdata "
