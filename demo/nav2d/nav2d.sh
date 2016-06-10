@@ -10,7 +10,7 @@ sudo cp -a ./nav2d.html /var/www/html/
 
 roslaunch pr2_gazebo pr2_wg_world.launch
 export ROBOT=sim
-rosrun map_server map_server /opt/ros/groovy/stacks/wg_common/willow_maps/willow-sans-whitelab-2010-02-18-0.025.pgm 0.025
+#rosrun map_server map_server /opt/ros/groovy/stacks/wg_common/willow_maps/willow-sans-whitelab-2010-02-18-0.025.pgm 0.025
 roslaunch pr2_2dnav pr2_2dnav.launch
 
 roslaunch pr2_tuckarm tuck_arms.launch
