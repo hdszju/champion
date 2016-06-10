@@ -12,7 +12,7 @@ sudo cp -a ./nav2d.html /var/www/html/
 
 
 
-gnome-terminal -x bash -c " export ROBOT=sim; roslaunch pr2_2dnav pr2_2dnav.launch"
+gnome-terminal -x bash -c " export ROBOT=sim; roslaunch cp_vel pr2_2dnav.launch"
 sleep 5s
 
 gnome-terminal -x bash -c " roslaunch pr2_tuckarm tuck_arms.launch"
