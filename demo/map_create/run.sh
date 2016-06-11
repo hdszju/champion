@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf mylaserdata.bag
 
-gnome-terminal -x bash -c " roslaunch pr2_gazebo pr2_wg_world.launch"
+gnome-terminal -x bash -c " rosparam set use_sim_time true;roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 15s
 
 gnome-terminal -x bash -c " rosparam set use_sim_time true;\
