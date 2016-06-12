@@ -4,7 +4,9 @@
 gnome-terminal -x bash -c " rosparam set use_sim_time true;roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 15s
 
-rosrun map_server map_server map.yaml
+
+gnome-terminal -x bash -c " rosrun map_server map_server map.yaml"
+sleep 5s
 
 sudo rm -rf /var/www/html/js_nav2d/
 sudo rm -rf /var/www/html/nav2d.html
