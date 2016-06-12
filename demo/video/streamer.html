@@ -1,0 +1,30 @@
+1 <!DOCTYPE html>
+   2 <html>
+   3 <head>
+   4 <meta charset="utf-8" />
+   5 <script type="text/javascript" src="./js/eventemitter2.min.js"></script>
+   6 <script type="text/javascript" src="./js/mjpegcanvas.min.js"></script>
+   7
+   8 <script type="text/javascript" type="text/javascript">
+   9   /**
+  10    * Setup all visualization elements when the page is loaded.
+  11    */
+  12   function init() {
+  13     // Create the main viewer.
+  14     var viewer = new MJPEGCANVAS.MultiStreamViewer({
+  15       divID : 'mjpeg',
+  16       host : 'localhost',
+  17       width : 640,
+  18       height : 480,
+  19       topics : [ '/wide_stereo/left/image_color', '/l_forearm_cam/image_color', '/r_forearm_cam/image_color' ],
+  20       labels : [ 'Robot View', 'Left Arm View', 'Right Arm View' ]
+  21     });
+  22   }
+  23 </script>
+  24 </head>
+  25
+  26 <body onload="init()">
+  27   <h1>Multi-Stream MJPEG Canvas Example</h1>
+  28   <div id="mjpeg"></div>
+  29 </body>
+  30 </html>
