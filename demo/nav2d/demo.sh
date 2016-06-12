@@ -7,12 +7,6 @@ sleep 15s
 gnome-terminal -x bash -c " rosrun map_server map_server map.yaml"
 sleep 5s
 
-sudo rm -rf /var/www/html/js_nav2d/
-sudo rm -rf /var/www/html/nav2d.html
-
-sudo cp -a ./js_nav2d /var/www/html/
-sudo cp -a ./nav2d.html /var/www/html/
-
 
 
 #source ../../devel/setup.bash
@@ -35,6 +29,12 @@ sleep 5s
 
 
 
+
+sudo rm -rf /var/www/html/js_nav2d/
+sudo rm -rf /var/www/html/nav2d.html
+
+sudo cp -a ./js_nav2d /var/www/html/
+sudo cp -a ./nav2d.html /var/www/html/
 
 
 sudo service apache2 restart
