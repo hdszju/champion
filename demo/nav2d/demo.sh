@@ -1,5 +1,8 @@
 
 #!/bin/bash
+osbridge-suite
+
+sudo apt-get install apache2
 
 gnome-terminal -x bash -c " rosparam set use_sim_time true;roslaunch pr2_gazebo pr2_wg_world.launch"
 sleep 15s
